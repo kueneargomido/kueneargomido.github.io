@@ -768,15 +768,10 @@ nav ul li a:hover::after {
 }
 
 /* Why Hire Me Section */
+/* Why Hire Me Section - Updated Styles */
 .why-hire {
     padding: 100px 0;
     background: linear-gradient(to right, var(--kaki-color), var(--white-color));
-}
-
-#why-hire .reason-item h3 {
-    color: var(--black-color); /* Or a lighter shade if needed */
-    transform: translateY(-3px); /* Slight lift effect */
-    transition: all 0.3s ease;
 }
 
 .reasons-container {
@@ -798,6 +793,14 @@ nav ul li a:hover::after {
 .reason-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background-color: var(--kaki-color); /* Change to kaki on hover */
+}
+
+/* Default state - black/dark text */
+.reason-item i,
+.reason-item h3,
+.reason-item p {
+    transition: all 0.3s ease;
 }
 
 .reason-item i {
@@ -809,10 +812,18 @@ nav ul li a:hover::after {
 .reason-item h3 {
     font-size: 1.3rem;
     margin-bottom: 15px;
+    color: var(--black-color);
 }
 
 .reason-item p {
     color: #555;
+}
+
+/* Hover state - white text */
+.reason-item:hover i,
+.reason-item:hover h3,
+.reason-item:hover p {
+    color: var(--white-color);
 }
 
 /* Services Section */
